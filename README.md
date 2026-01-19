@@ -104,18 +104,5 @@ Desenvolvido por **Sérgio Moita**
 Graduando em Ciência da Computação  
 Desenvolvedor Back End em formação
 
----
-
-## 👉 Próximo passo recomendado
-
-Substituir `https://SEU-SITE.netlify.app` pelo link real do Netlify quando publicar.
-
-Se quiser, posso:
-
-- Adaptar esse README para **inglês**
-- Deixá-lo mais **técnico** ou mais **comercial**
-- Incluir **badges** (Netlify, GitHub Pages, etc.)
-
-🚀 Você encerrou esse projeto em **nível profissional de portfólio**
 
 

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description"
+        content="Portfólio de Sérgio Moita — Desenvolvedor Back End. Projetos: Biblifor, Loja de Carros, Calculadora Proposicional." />
+
+    <title>Sérgio Moita | Portfólio</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Dica: coloque um favicon depois (opcional)
+  <link rel="icon" href="/img/favicon.png" />
+  -->
+</head>
+
+<body>
+    <!-- Acessibilidade: pular para o conteúdo -->
+    <a class="pular-conteudo" href="#inicio">Pular para o conteúdo</a>
+
+    <div class="particulas" aria-hidden="true"></div>
+
+    <header class="topo">
+        <nav class="navegacao" aria-label="Navegação principal">
+            <a class="logo" href="#inicio" aria-label="Ir para o início">
+                <span class="logo-texto">Sérgio<span class="logo-destaque">Moita</span></span>
+            </a>
+
+
+            <!-- Botão hambúrguer (mobile) -->
+            <button class="menu-botao" id="menuBotao" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menuPrincipal">
+                <span class="menu-botao-linha"></span>
+                <span class="menu-botao-linha"></span>
+                <span class="menu-botao-linha"></span>
+            </button>
+
+            <ul class="menu" id="menuPrincipal">
+                <li><a href="#inicio" class="menu-link">Início</a></li>
+                <li><a href="#sobre" class="menu-link">Sobre</a></li>
+                <li><a href="#projetos" class="menu-link">Projetos</a></li>
+                <li><a href="#contato" class="menu-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio" class="cabecalho">
+        <div class="cabecalho-conteudo">
+            <div class="cabecalho-textos">
+                <p class="cabecalho-hello">Olá, meu nome é</p>
+
+                <h1 class="cabecalho-titulo">
+                    Sérgio <span>Moita</span>
+                </h1>
+
+                <p class="cabecalho-cargo">
+                    Eu sou <span class="texto-dinamico" id="textoDinamico">Desenvolvedor Back End</span>
+                </p>
+
+
+
+                <p class="cabecalho-descricao">
+                    Desenvolvedor focado em construir aplicações robustas e bem organizadas.
+                    Curto transformar ideias em soluções reais, com boas práticas e código limpo.
+                </p>
+
+                <div class="cabecalho-acoes">
+                    <a href="#projetos" class="botao botao-primario">MEUS PROJETOS</a>
+                    <a href="#contato" class="botao botao-secundario">CONTATO</a>
+                </div>
+
+                <div class="cabecalho-links">
+                    <a class="link-social" href="https://github.com/sergiomoita" target="_blank"
+                        rel="noopener noreferrer" aria-label="GitHub">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M12 .5C5.73.5.75 5.66.75 12.2c0 5.25 3.44 9.7 8.2 11.27.6.12.82-.27.82-.59v-2.2c-3.34.75-4.04-1.47-4.04-1.47-.55-1.45-1.34-1.83-1.34-1.83-1.1-.78.08-.77.08-.77 1.22.09 1.86 1.3 1.86 1.3 1.08 1.93 2.83 1.37 3.52 1.05.11-.81.42-1.37.76-1.68-2.66-.31-5.46-1.39-5.46-6.18 0-1.36.46-2.47 1.22-3.34-.12-.31-.53-1.57.12-3.27 0 0 1.01-.33 3.3 1.27a11.08 11.08 0 0 1 6.01 0c2.29-1.6 3.3-1.27 3.3-1.27.65 1.7.24 2.96.12 3.27.76.87 1.22 1.98 1.22 3.34 0 4.8-2.8 5.87-5.47 6.18.43.39.81 1.15.81 2.32v3.44c0 .32.22.71.83.59 4.76-1.57 8.2-6.02 8.2-11.27C23.25 5.66 18.27.5 12 .5z" />
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+
+                    <a class="link-social" href="https://www.linkedin.com/in/s%C3%A9rgio-moita-9b8856383/"
+                        target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0.5 8.2h4V23h-4V8.2zM8.5 8.2h3.8v2c.55-1.05 1.9-2.2 4-2.2 4.05 0 4.8 2.7 4.8 6.2V23h-4v-7.6c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4v7.7h-4V8.2z" />
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <a class="link-social" href="https://mail.google.com/mail/?view=cm&fs=1&to=sergiomoita12@gmail.com"
+                        aria-label="Email">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z" />
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class="cabecalho-foto">
+                <!-- Foto DESCONTRAÍDA aqui -->
+                <img src="img/foto-descontraida.jpg" alt="Foto de Sérgio Moita" class="foto-hero" loading="eager" />
+            </div>
+        </div>
+
+        <a href="#sobre" class="cabecalho-scroll" aria-label="Ir para a seção Sobre">
+            <svg class="scroll-seta" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+
+            <h2 class="sobre-titulo reveal">Sobre Mim</h2>
+
+            <div class="sobre-layout">
+
+                <!-- Foto profissional -->
+                <div class="sobre-foto reveal delay-1">
+                    <img src="/img/ChatGPT Image 12 de jan. de 2026, 12_35_19.png"
+                        alt="Foto profissional de Sérgio Moita" class="foto-sobre">
+                </div>
+
+                <!-- Texto -->
+                <div class="sobre-texto">
+                    <h3 class="sobre-subtitulo reveal delay-2">
+                        Desenvolvedor Back End em formação
+                    </h3>
+
+                    <p class="sobre-paragrafo reveal delay-3">
+                        Sou estudante de Ciência da Computação e desenvolvedor focado em Back End.
+                        Gosto de construir sistemas organizados, APIs bem estruturadas e soluções
+                        que resolvem problemas reais com boas práticas e código limpo.
+                    </p>
+
+                    <p class="sobre-paragrafo reveal delay-4">
+                        Tenho experiência com desenvolvimento web, mobile e projetos acadêmicos,
+                        sempre buscando evoluir tecnicamente, aprender novas tecnologias e aplicar
+                        conceitos sólidos de engenharia de software.
+                    </p>
+
+                    <div class="sobre-info reveal delay-4" aria-label="Informações pessoais">
+                        <div class="info-item">
+                            <span class="info-label">Nome:</span>
+                            <span class="info-valor">Sérgio Moita</span>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-valor">
+                                <a
+                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=sergiomoita12@gmail.com">sergiomoita12@gmail.com</a>
+                            </span>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Telefone:</span>
+                            <span class="info-valor">
+                                <a href="https://wa.me/5585991934937" target="_blank" rel="noopener noreferrer">
+                                    +55 (85) 99193-4937
+                                </a>
+                            </span>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Localização:</span>
+                            <span class="info-valor">Fortaleza, Ceará</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="sobre-skills-barra reveal delay-4" aria-label="Tecnologias e nível de familiaridade">
+
+                <div class="skill-bar">
+                    <div class="skill-topo">
+                        <span>Java</span>
+                        <span class="skill-pct">80%</span>
+                    </div>
+                    <div class="skill-trilho"><span class="skill-progresso" style="width:80%"></span></div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-topo">
+                        <span>Kotlin</span>
+                        <span class="skill-pct">70%</span>
+                    </div>
+                    <div class="skill-trilho"><span class="skill-progresso" style="width:70%"></span></div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-topo">
+                        <span>Spring Boot</span>
+                        <span class="skill-pct">65%</span>
+                    </div>
+                    <div class="skill-trilho"><span class="skill-progresso" style="width:65%"></span></div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-topo">
+                        <span>JavaScript</span>
+                        <span class="skill-pct">60%</span>
+                    </div>
+                    <div class="skill-trilho"><span class="skill-progresso" style="width:60%"></span></div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-topo">
+                        <span>Firebase</span>
+                        <span class="skill-pct">70%</span>
+                    </div>
+                    <div class="skill-trilho"><span class="skill-progresso" style="width:70%"></span></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2 class="projetos-titulo reveal">Meus Projetos</h2>
+
+            <div class="projetos-caixa">
+
+                <!-- Biblifor -->
+                <article class="projetos-card">
+                    <img src="/img/{81E7AFDA-178A-42D2-8CD7-B99FF2DC079E}.png" alt="Capa do projeto Biblifor"
+                        class="projetos-imagem reveal delay-1" loading="lazy" />
+
+                    <div class="caixa-textos-projetos">
+                        <h3 class="info-projetos reveal delay-2">Biblifor — App de Biblioteca</h3>
+
+                        <p class="paragrafo-projetos reveal delay-3">
+                            Aplicativo para biblioteca universitária com foco em experiência do usuário,
+                            organização e fluxo de empréstimos/consulta.
+                        </p>
+
+                        <div class="projetos-tags reveal delay-3" aria-label="Tecnologias do projeto Biblifor">
+                            <span class="tag">Android</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Kotlin/Java</span>
+                        </div>
+
+                        <div class="projetos-acoes reveal delay-4">
+                            <a class="botao botao-secundario" href="https://github.com/sergiomoita/biblifor-app"
+                                target="_blank" rel="noopener noreferrer">
+                                GitHub
+                            </a>
+                            <a class="botao botao-primario"
+                                href="https://github.com/sergiomoita/biblifor-app?tab=readme-ov-file#-como-executar-o-projeto"
+                                target="_blank" rel="noopener noreferrer">Detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Loja de Carros -->
+                <article class="projetos-card reveal">
+                    <img src="/img/{1C47356C-3D02-4A15-A834-291F9321F817}.png" alt="Capa do projeto Legendary Motors"
+                        class="projetos-imagem reveal delay-2" loading="lazy" />
+
+                    <div class="caixa-textos-projetos">
+                        <h3 class="info-projetos reveal delay-3">Loja de Carros</h3>
+
+                        <p class="paragrafo-projetos reveal delay-4">
+                            Sistema com interface de login/cadastro e páginas de navegação,
+                            com foco em organização de dados e experiência.
+                        </p>
+
+                        <div class="projetos-tags reveal delay-4" aria-label="Tecnologias do projeto Loja de Carros">
+                            <span class="tag">Java</span>
+                            <span class="tag">POO</span>
+                            <span class="tag">UI</span>
+                        </div>
+
+                        <div class="projetos-acoes reveal delay-4">
+                            <a class="botao botao-secundario"
+                                href="https://github.com/sergiomoita/loja-veiculos-java-swing-poo" target="_blank"
+                                rel="noopener noreferrer">
+                                GitHub
+                            </a>
+
+                            <a class="botao botao-primario"
+                                href="https://github.com/sergiomoita/loja-veiculos-java-swing-poo?tab=readme-ov-file#%EF%B8%8F-como-executar-o-projeto"
+                                target="_blank" rel="noopener noreferrer">Detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Calculadora Proposicional -->
+                <article class="projetos-card reveal">
+                    <img src="/img/{A28B52EA-5458-4DA4-AC07-887D04B5E97F}.png"
+                        alt="Capa do projeto Calculadora Proposicional" class="projetos-imagem reveal delay-3"
+                        loading="lazy" />
+
+                    <div class="caixa-textos-projetos reveal delay-4">
+                        <h3 class="info-projetos">Calculadora Proposicional</h3>
+
+                        <p class="paragrafo-projetos reveal delay-4">
+                            Ferramenta para montar expressões lógicas e gerar tabela verdade,
+                            com interação via teclado e botões.
+                        </p>
+
+                        <div class="projetos-tags reveal delay-4"
+                            aria-label="Tecnologias do projeto Calculadora Proposicional">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Lógica</span>
+                            <span class="tag">Web</span>
+                        </div>
+
+                        <div class="projetos-acoes reveal delay-4">
+                            <a class="botao botao-secundario"
+                                href="https://github.com/sergiomoita/calculadora-proposicional" target="_blank"
+                                rel="noopener noreferrer">
+                                GitHub
+                            </a>
+
+                            <a class="botao botao-primario"
+                                href="https://sergiomoita.github.io/calculadora-proposicional/" target="_blank"
+                                rel="noopener noreferrer">Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+
+            <h2 class="contato-titulo reveal">Entre em Contato</h2>
+
+            <div class="contato-layout">
+
+                <!-- Lado esquerdo: texto + infos + redes -->
+                <div class="contato-lado contato-lado-info reveal delay-1">
+                    <h3 class="contato-subtitulo">Vamos conversar</h3>
+
+                    <p class="contato-texto">
+                        Estou disponível para oportunidades de estágio/júnior e projetos.
+                        Se você curtiu algum projeto, me chama — respondo rápido.
+                    </p>
+
+                    <div class="contato-info-lista">
+
+                        <a class="contato-info-item" href="https://maps.google.com/?q=Fortaleza,+Cear%C3%A1"
+                            target="_blank" rel="noopener noreferrer">
+                            <span class="contato-info-icone" aria-hidden="true">
+                                <!-- Localização -->
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                                    <path d="M12 21s7-4.6 7-11a7 7 0 1 0-14 0c0 6.4 7 11 7 11Z" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <path d="M12 10.5a2.5 2.5 0 1 0 0-5" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </span>
+
+                            <span class="contato-info-texto">
+                                <span class="contato-info-titulo">Localização</span>
+                                <span class="contato-info-valor">Fortaleza, Ceará, Brasil</span>
+                            </span>
+                        </a>
+
+                        <a class="contato-info-item"
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=sergiomoita12@gmail.com">
+                            <span class="contato-info-icone" aria-hidden="true">
+                                <!-- Email -->
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                                    <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2" />
+                                    <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </span>
+
+                            <span class="contato-info-texto">
+                                <span class="contato-info-titulo">Email</span>
+                                <span class="contato-info-valor">sergiomoita12@gmail.com</span>
+                            </span>
+                        </a>
+
+                        <a class="contato-info-item" href="https://wa.me/5585991934937" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="contato-info-icone" aria-hidden="true">
+                                <!-- Telefone -->
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                                    <path d="M5.5 4.5h4l1.2 4-2.1 1.4a14.6 14.6 0 0 0 6.4 6.4l1.4-2.1 4 1.2v4"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+
+                            <span class="contato-info-texto">
+                                <span class="contato-info-titulo">Telefone</span>
+                                <span class="contato-info-valor">+55 (85) 99179-8112</span>
+                            </span>
+                        </a>
+
+                    </div>
+
+                    <div class="cabecalho-links contato-redes">
+                        <a class="link-social" href="https://github.com/sergiomoita" target="_blank"
+                            rel="noopener noreferrer" aria-label="GitHub">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor"
+                                    d="M12 .5C5.73.5.75 5.66.75 12.2c0 5.25 3.44 9.7 8.2 11.27.6.12.82-.27.82-.59v-2.2c-3.34.75-4.04-1.47-4.04-1.47-.55-1.45-1.34-1.83-1.34-1.83-1.1-.78.08-.77.08-.77 1.22.09 1.86 1.3 1.86 1.3 1.08 1.93 2.83 1.37 3.52 1.05.11-.81.42-1.37.76-1.68-2.66-.31-5.46-1.39-5.46-6.18 0-1.36.46-2.47 1.22-3.34-.12-.31-.53-1.57.12-3.27 0 0 1.01-.33 3.3 1.27a11.08 11.08 0 0 1 6.01 0c2.29-1.6 3.3-1.27 3.3-1.27.65 1.7.24 2.96.12 3.27.76.87 1.22 1.98 1.22 3.34 0 4.8-2.8 5.87-5.47 6.18.43.39.81 1.15.81 2.32v3.44c0 .32.22.71.83.59 4.76-1.57 8.2-6.02 8.2-11.27C23.25 5.66 18.27.5 12 .5z" />
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+
+                        <a class="link-social" href="https://www.linkedin.com/in/s%C3%A9rgio-moita-9b8856383/"
+                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor"
+                                    d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0.5 8.2h4V23h-4V8.2zM8.5 8.2h3.8v2c.55-1.05 1.9-2.2 4-2.2 4.05 0 4.8 2.7 4.8 6.2V23h-4v-7.6c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4v7.7h-4V8.2z" />
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+
+                        <!-- Instagram (entra no lugar do WhatsApp) -->
+                        <a class="link-social" href="https://instagram.com/sergiomoita_" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor"
+                                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.8 6.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" />
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+
+                        <a class="link-social"
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=sergiomoita12@gmail.com"
+                            aria-label="Email">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor"
+                                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z" />
+                            </svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <!-- Lado direito: formulário WhatsApp -->
+                <div class="contato-lado reveal delay-2">
+                    <form class="formulario-contato formulario-contato--grid" id="formulario">
+                        <div class="grupo-form">
+                            <label class="label-form" for="nome">Seu Nome</label>
+                            <input class="campo-form" id="nome" name="nome" autocomplete="name" required />
+                        </div>
+
+                        <div class="grupo-form">
+                            <label class="label-form" for="email">Seu Email</label>
+                            <input class="campo-form" id="email" name="email" type="email" autocomplete="email"
+                                required />
+                        </div>
+
+                        <div class="grupo-form grupo-form--full">
+                            <label class="label-form" for="assunto">Assunto</label>
+                            <input class="campo-form" id="assunto" name="assunto" required />
+                        </div>
+
+                        <div class="grupo-form grupo-form--full">
+                            <label class="label-form" for="mensagem">Sua Mensagem</label>
+                            <textarea class="campo-form" rows="6" id="mensagem" name="mensagem" required></textarea>
+                        </div>
+
+                        <button type="submit" class="botao-form botao-form--contato">
+                            Enviar no WhatsApp
+                        </button>
+
+                        <p class="contato-ajuda">
+                            Ao enviar, uma conversa será aberta no WhatsApp com sua mensagem preenchida.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <h3 class="rodape-nome">Sérgio Moita</h3>
+
+            <p class="rodape-descricao">
+                Desenvolvedor back-end em formação, focado em projetos reais e boas práticas.
+            </p>
+
+            <div class="cabecalho-links rodape-redes">
+                <!-- GitHub -->
+                <a class="link-social" href="https://github.com/sergiomoita" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M12 .5C5.73.5.75 5.66.75 12.2c0 5.25 3.44 9.7 8.2 11.27.6.12.82-.27.82-.59v-2.2c-3.34.75-4.04-1.47-4.04-1.47-.55-1.45-1.34-1.83-1.34-1.83-1.1-.78.08-.77.08-.77 1.22.09 1.86 1.3 1.86 1.3 1.08 1.93 2.83 1.37 3.52 1.05.11-.81.42-1.37.76-1.68-2.66-.31-5.46-1.39-5.46-6.18 0-1.36.46-2.47 1.22-3.34-.12-.31-.53-1.57.12-3.27 0 0 1.01-.33 3.3 1.27a11.08 11.08 0 0 1 6.01 0c2.29-1.6 3.3-1.27 3.3-1.27.65 1.7.24 2.96.12 3.27.76.87 1.22 1.98 1.22 3.34 0 4.8-2.8 5.87-5.47 6.18.43.39.81 1.15.81 2.32v3.44c0 .32.22.71.83.59 4.76-1.57 8.2-6.02 8.2-11.27C23.25 5.66 18.27.5 12 .5z" />
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a class="link-social" href="https://www.linkedin.com/in/s%C3%A9rgio-moita-9b8856383/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0.5 8.2h4V23h-4V8.2zM8.5 8.2h3.8v2c.55-1.05 1.9-2.2 4-2.2 4.05 0 4.8 2.7 4.8 6.2V23h-4v-7.6c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4v7.7h-4V8.2z" />
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+
+                <!-- Email -->
+                <a class="link-social" href="https://mail.google.com/mail/?view=cm&fs=1&to=sergiomoita12@gmail.com"
+                    aria-label="Email">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z" />
+                    </svg>
+                    <span>Email</span>
+                </a>
+            </div>
+
+            <p class="rodape-copy">© <span id="anoAtual"></span> Sérgio Moita. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // ===== WhatsApp =====
+        function enviarWhats(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const assunto = document.getElementById('assunto').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+
+            const telefone = '5585991934937';
+
+            const texto =
+                `Olá! Me chamo ${nome}.
+                Email: ${email}
+                Assunto: ${assunto}
+
+                Mensagem:
+                ${mensagem}`;
+
+            const url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
+            window.open(url, '_blank');
+        }
+
+        document.getElementById('formulario').addEventListener('submit', enviarWhats);
+
+
+        document.getElementById('formulario').addEventListener('submit', enviarWhats);
+
+        // ===== Menu mobile =====
+        const menuBotao = document.getElementById('menuBotao');
+        const menuPrincipal = document.getElementById('menuPrincipal');
+
+        menuBotao.addEventListener('click', () => {
+            const aberto = menuPrincipal.classList.toggle('menu-aberto');
+            menuBotao.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+            menuBotao.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+        });
+
+        // Fecha o menu ao clicar em um link (mobile)
+        document.querySelectorAll('.menu-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuPrincipal.classList.contains('menu-aberto')) {
+                    menuPrincipal.classList.remove('menu-aberto');
+                    menuBotao.setAttribute('aria-expanded', 'false');
+                    menuBotao.setAttribute('aria-label', 'Abrir menu');
+                }
+            });
+        });
+
+        // Ano no footer
+        document.getElementById('anoAtual').textContent = new Date().getFullYear();
+
+        // ===== Texto dinâmico (Hero) =====
+        const textoDinamico = document.getElementById("textoDinamico");
+
+        const textos = [
+            "Desenvolvedor Back End",
+            "Desenvolvedor Web",
+            "Estudante de Ciências da Computação",
+            "Apaixonado por APIs e boas práticas",
+            "Focado em projetos reais"
+        ];
+
+        let indice = 0;
+        let intervalId = null;
+
+        // tempos (ajuste como quiser)
+        const TEMPO_VISIVEL = 2100;  // tempo que fica mostrado
+        const TEMPO_TRANSICAO = 350; // deve bater com o CSS (.35s)
+
+        function trocarTextoSuave() {
+            // sai
+            textoDinamico.classList.add("saindo");
+
+            // após terminar de “sumir”, troca o texto e entra
+            setTimeout(() => {
+                indice = (indice + 1) % textos.length;
+                textoDinamico.textContent = textos[indice];
+
+                textoDinamico.classList.remove("saindo");
+                textoDinamico.classList.add("entrando");
+
+                // limpa a classe "entrando" pra não acumular
+                setTimeout(() => {
+                    textoDinamico.classList.remove("entrando");
+                }, TEMPO_TRANSICAO);
+
+            }, TEMPO_TRANSICAO);
+        }
+
+        function iniciarRotacao() {
+            if (intervalId) clearInterval(intervalId);
+            intervalId = setInterval(trocarTextoSuave, TEMPO_VISIVEL + TEMPO_TRANSICAO);
+        }
+
+        iniciarRotacao();
+
+        // ===== Reveal ao scroll (1x) =====
+        const revealEls = document.querySelectorAll('.reveal');
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    obs.unobserve(entry.target); // só uma vez
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealEls.forEach(el => observer.observe(el));
+
+        // Anima as barras quando entram na tela
+        document.querySelectorAll('.skill-progresso').forEach(bar => {
+            const alvo = bar.style.width;
+            bar.style.width = '0';
+            bar.dataset.alvo = alvo;
+        });
+
+        const skillObserver = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.skill-progresso').forEach(bar => {
+                        bar.style.width = bar.dataset.alvo;
+                    });
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.25 });
+
+        document.querySelectorAll('.sobre-skills-barra').forEach(sec => skillObserver.observe(sec));
+
+
+    </script>
+</body>
+
+</html>

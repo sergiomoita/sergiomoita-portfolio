@@ -65,57 +65,57 @@ Você pode rodar o projeto de forma simples, sem dependências:
 
 3. Abra o arquivo index.html no navegador
 
-###Opção 2 — Usando Live Server (recomendado)
-Se você usa VS Code:
-Instale a extensão Live Server
-Clique com o botão direito em index.html
-Selecione “Open with Live Server”
+### Opção 2 — Usando Live Server (recomendado)
+
+Se você usa o **VS Code**:
+
+1. Instale a extensão **Live Server**
+2. Clique com o botão direito em `index.html`
+3. Selecione **“Open with Live Server”**
 
 ---
 
-##🌐 Deploy
+## 🌐 Deploy
 
-O site está hospedado no Netlify, com deploy automático via GitHub.
+O site está hospedado no **Netlify**, com deploy automático via GitHub.
 
-Sempre que um novo git push é feito para a branch main, o site é atualizado automaticamente.
-
----
-
-##📬 Contato
-
-LinkedIn: https://www.linkedin.com/in/sérgio-moita-9b8856383/
-
-GitHub: https://github.com/sergiomoita
-
-Email: sergiomoita12@gmail.com
+Sempre que um novo `git push` é feito para a branch `main`, o site é atualizado automaticamente.
 
 ---
 
-##📌 Status do Projeto
+## 📬 Contato
+
+- **LinkedIn:** https://www.linkedin.com/in/sérgio-moita-9b8856383/
+- **GitHub:** https://github.com/sergiomoita
+- **Email:** sergiomoita12@gmail.com
 
 ---
 
-##🟢 Em constante evolução
+## 📌 Status do Projeto
+
+🟢 **Em constante evolução**  
 Novos projetos, melhorias visuais e integrações podem ser adicionadas futuramente.
 
 ---
 
-##🧑‍💻 Autor
+## 🧑‍💻 Autor
 
-Desenvolvido por Sérgio Moita
-Graduando em Ciência da Computação
+Desenvolvido por **Sérgio Moita**  
+Graduando em Ciência da Computação  
 Desenvolvedor Back End em formação
-
 
 ---
 
-##👉 **Próximo passo recomendado**:  
+## 👉 Próximo passo recomendado
+
 Substituir `https://SEU-SITE.netlify.app` pelo link real do Netlify quando publicar.
 
 Se quiser, posso:
-- adaptar esse README para **inglês**
-- deixá-lo mais **técnico** ou mais **comercial**
-- incluir **badges** (Netlify, GitHub Pages, etc.)
 
-Você encerrou esse projeto **em nível profissional de portfólio** 🚀
+- Adaptar esse README para **inglês**
+- Deixá-lo mais **técnico** ou mais **comercial**
+- Incluir **badges** (Netlify, GitHub Pages, etc.)
+
+🚀 Você encerrou esse projeto em **nível profissional de portfólio**
+
 
